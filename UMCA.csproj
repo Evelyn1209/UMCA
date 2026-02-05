@@ -67,14 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estilos\CategoriaStyle.css" />
     <Content Include="Global.asax" />
+    <Content Include="vistas\categoriaForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\CategoriaClass.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="vistas\categoriaForm.aspx.cs">
+      <DependentUpon>categoriaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vistas\categoriaForm.aspx.designer.cs">
+      <DependentUpon>categoriaForm.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -87,12 +97,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Clases\" />
     <Folder Include="controladores\" />
-    <Folder Include="estilos\" />
     <Folder Include="Models\" />
     <Folder Include="utilidades\" />
-    <Folder Include="vistas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
